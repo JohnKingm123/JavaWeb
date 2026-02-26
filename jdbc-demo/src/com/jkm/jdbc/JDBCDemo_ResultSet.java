@@ -12,11 +12,11 @@ import java.util.List;
 
 public class JDBCDemo_ResultSet {
     @Test
-    public void ResultSet() throws Exception{
+    public void ResultSetTest() throws Exception{
         String url="jdbc:mysql:///db0?useSSL=false";
-        String user="root";
+        String DBuser="root";
         String DBpassword="411378";
-        Connection conn = DriverManager.getConnection(url,user,DBpassword);
+        Connection conn = DriverManager.getConnection(url,DBuser,DBpassword);
 
         String sql = "SELECT * FROM user;";
         Statement statmt = conn.createStatement();
@@ -38,7 +38,7 @@ public class JDBCDemo_ResultSet {
     }
 
     @Test
-    public void ResultSetEncapsulation() throws Exception{
+    public void ResultSetEncapsulationTest() throws Exception{
         String url="jdbc:mysql:///db0?useSSL=false";
         String user="root";
         String DBpassword="411378";

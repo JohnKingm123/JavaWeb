@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ece2e487-6ac2-4d9e-bbb9-cd851595aa9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc-demo/src/com/jkm/jdbc/JDBCDemo_ResultSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc-demo/src/com/jkm/jdbc/JDBCDemo_Statement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc-demo/src/com/jkm/pojo/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-demo/src/com/jkm/druid/DruidDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-demo/src/com/jkm/example/BrandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-demo/src/com/jkm/jdbc/JDBCDemo_Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-demo/src/com/jkm/jdbc/JDBCDemo_PreparedStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-demo/src/com/jkm/pojo/Brand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-demo/src/druid.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/druid-1.1.12.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jdbc-demo/jdbc-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-demo/jdbc-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc-demo/src/com/jkm/jdbc/JDBCDemo_ResultSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-demo/src/com/jkm/jdbc/JDBCDemo_ResultSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jdbc-demo/com/jkm/jdbc/JDBCDemo_ResultSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jdbc-demo/com/jkm/jdbc/JDBCDemo_ResultSet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -34,16 +40,26 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.DruidDemo.executor": "Run",
     "Application.JDBCDemo.executor": "Run",
     "Application.JDBCDemo_Connection.executor": "Run",
     "Downloaded.Files.Path.Enabled": "true",
+    "JUnit.BrandTest.DeleteTest.executor": "Run",
+    "JUnit.BrandTest.InsertTest.executor": "Run",
+    "JUnit.BrandTest.QueryAllTest.executor": "Run",
+    "JUnit.BrandTest.UpdateTest.executor": "Run",
+    "JUnit.JDBCDemo_Login.LoginTest.executor": "Run",
+    "JUnit.JDBCDemo_PreparedStatement.PreparedStatementTest.executor": "Run",
+    "JUnit.JDBCDemo_PreparedStatement.PreparedStatementTest2.executor": "Run",
     "JUnit.JDBCDemo_ResultSet.ResultSet.executor": "Run",
+    "JUnit.JDBCDemo_ResultSet.ResultSetEncapsulation.executor": "Run",
     "JUnit.JDBCDemo_Statement.DDLTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -55,13 +71,18 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.JDBCDemo_ResultSet.ResultSetEncapsulation">
-    <configuration name="JDBCDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jkm.jdbc.JDBCDemo" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CodeStorge\JavaWeb\lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BrandTest.DeleteTest">
+    <configuration name="DruidDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jkm.druid.DruidDemo" />
       <module name="jdbc-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jkm.jdbc.*" />
+          <option name="PATTERN" value="com.jkm.druid.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,62 +90,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCDemo_Connection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jkm.jdbc.JDBCDemo_Connection" />
+    <configuration name="BrandTest.DeleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jkm.jdbc.*" />
+          <option name="PATTERN" value="com.jkm.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JDBCDemo_ResultSet.ResultSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jdbc-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jkm.jdbc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jkm.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.jkm.jdbc.JDBCDemo_ResultSet" />
-      <option name="METHOD_NAME" value="ResultSet" />
+      <option name="PACKAGE_NAME" value="com.jkm.example" />
+      <option name="MAIN_CLASS_NAME" value="com.jkm.example.BrandTest" />
+      <option name="METHOD_NAME" value="DeleteTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCDemo_ResultSet.ResultSetEncapsulation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BrandTest.InsertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jkm.jdbc.*" />
+          <option name="PATTERN" value="com.jkm.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jkm.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.jkm.jdbc.JDBCDemo_ResultSet" />
-      <option name="METHOD_NAME" value="ResultSetEncapsulation" />
+      <option name="PACKAGE_NAME" value="com.jkm.example" />
+      <option name="MAIN_CLASS_NAME" value="com.jkm.example.BrandTest" />
+      <option name="METHOD_NAME" value="InsertTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCDemo_Statement.DDLTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BrandTest.QueryAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jkm.jdbc.*" />
+          <option name="PATTERN" value="com.jkm.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jkm.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.jkm.jdbc.JDBCDemo_Statement" />
-      <option name="METHOD_NAME" value="DDLTest" />
+      <option name="PACKAGE_NAME" value="com.jkm.example" />
+      <option name="MAIN_CLASS_NAME" value="com.jkm.example.BrandTest" />
+      <option name="METHOD_NAME" value="QueryAllTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BrandTest.UpdateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jkm.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jkm.example" />
+      <option name="MAIN_CLASS_NAME" value="com.jkm.example.BrandTest" />
+      <option name="METHOD_NAME" value="UpdateTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JDBCDemo_ResultSet.ResultSetEncapsulation" />
-        <item itemvalue="JUnit.JDBCDemo_ResultSet.ResultSet" />
-        <item itemvalue="JUnit.JDBCDemo_Statement.DDLTest" />
-        <item itemvalue="Application.JDBCDemo_Connection" />
-        <item itemvalue="Application.JDBCDemo" />
+        <item itemvalue="JUnit.BrandTest.DeleteTest" />
+        <item itemvalue="JUnit.BrandTest.UpdateTest" />
+        <item itemvalue="JUnit.BrandTest.InsertTest" />
+        <item itemvalue="JUnit.BrandTest.QueryAllTest" />
+        <item itemvalue="Application.DruidDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +181,8 @@
       <updated>1771642128928</updated>
       <workItem from="1772004459635" duration="4897000" />
       <workItem from="1772027882314" duration="820000" />
-      <workItem from="1772071679110" duration="4889000" />
+      <workItem from="1772071679110" duration="13885000" />
+      <workItem from="1772109052572" duration="6497000" />
     </task>
     <servers />
   </component>
